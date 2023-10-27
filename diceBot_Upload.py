@@ -48,5 +48,13 @@ async def sort(ctx):
     rollResult.clear()
     sortResult.clear()
 
+#딕셔너리 초기화
+@bot.command()
+async def reset(ctx):
+    print(rollResult, sortResult)
+    rollResult.clear()
+    sortResult.clear()
+    print(rollResult, sortResult)
+
 #봇 실행
 bot.run(TOKEN)
